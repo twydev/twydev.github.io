@@ -1,9 +1,9 @@
 title: notebook
 email:
 description: >- 
-  Engineering concepts. Fun stuff.
+  Software Engineering.
 github_username: twydev
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "air"
 search: true
 logo: "/assets/images/nlogo40.png"
 
@@ -50,11 +50,6 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://sg.linkedin.com/in/wei-yang-tan"
 
-collections:
-  lifestyle:
-    output: true
-    permalink: /:collection/:path/
-
 defaults:
   # _posts
   - scope:
@@ -74,17 +69,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _lifestyle
-  - scope:
-      path: ""
-      type: lifestyle
-    values:
-      layout: single
-      read_time: false
-      author_profile: true
-      comments: false
-      share: true
-      related: true
 
 category_archive:
   type: liquid

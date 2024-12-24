@@ -1,11 +1,9 @@
 main:
   # - title: "years"
   #   url: /notes/
-  # - title: "categories"
-  #   url: /categories/
+  - title: "categories"
+    url: /categories/
   - title: "tags"
     url: /tags/
-  - title: "lifestyle"
-    url: /lifestyle/
   - title: "about"
     url: /about/
