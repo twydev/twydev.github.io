@@ -2,6 +2,7 @@
 title: "Setting up a Serverless + NodeJS project"
 toc: true
 toc_label: "Sections"
+published: false
 ---
 
 How to set up a serverless nodeJS project from scratch. Includes instructions for Git, GitLab CI and Runner set up, ESLint, Jest, Winston, Complexity Report, and dotenv.

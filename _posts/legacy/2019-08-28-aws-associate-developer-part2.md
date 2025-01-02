@@ -2,6 +2,7 @@
 title: "Ultimate AWS Certified Developer Associate 2019 - Part 2"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 Part 2 covers software development using AWS. Topics include the use of AWS CLI and AWS SDK, tools for troubleshooting IAM roles and policies, using IAM permissions with EC2, Elastic BeanStalk, and AWS CICD suite (CodeCommit, CodePipeline, CodeBuild, CodeDeploy, CodeStar).

@@ -2,6 +2,7 @@
 title: "Ultimate AWS Certified Developer Associate 2019 - Part 5"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 Part 5 of this course covers ECS, Fargate, Encryption Strategies, KMS, Systems Manager SSM, IAM Best Practices, CloudFront, Step Functions, SWF, SES, ACM, and other loose ends that are required for the exam.

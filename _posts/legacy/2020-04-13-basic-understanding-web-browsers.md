@@ -2,6 +2,7 @@
 title: "Basic understanding of Web Browsers"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 Since the invention of JavaScript was solely driven by the desire to enrich web browsing experience through client side processing, we must know how modern browsers work, in order to truly know JavaScript. Here is a link to an [article written by Tali Garsiel](http://taligarsiel.com/Projects/howbrowserswork1.htm) that explores the internals of web browsers. The article is old, but gold.

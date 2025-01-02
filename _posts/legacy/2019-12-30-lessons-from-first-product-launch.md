@@ -2,6 +2,7 @@
 title: "Lessons from my first product launch"
 toc: true
 toc_label: "Lessons"
+published: false
 ---
 
 I have participated in the launch of a B2B e-commerce platform. Here are some of the lessons I have learnt in terms of resource management, engineering process, as well as the preparation leading up to the launch.

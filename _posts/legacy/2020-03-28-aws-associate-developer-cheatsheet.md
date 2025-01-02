@@ -2,6 +2,7 @@
 title: "AWS Certified Associate Developer Cheat Sheet"
 toc: true
 toc_label: "Topics"
+published: false
 ---
 
 Realising that I am likely to fail the certification if I solely rely on a Udemy course, this is a compilation of notes from other reading materials, mostly from TutorialsDojo.

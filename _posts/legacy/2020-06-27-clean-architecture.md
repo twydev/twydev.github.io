@@ -2,6 +2,7 @@
 title: "Clean Architecture"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 *Work in progress.*

@@ -2,6 +2,7 @@
 title: "Clean Code (PluralSight Course)"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 A very brief and general introduction to clean code by Cory House. Applicable to all languages. Touch on topics such as naming, conditionals, functions, classes, and comments.

@@ -2,6 +2,7 @@
 title: "Clean Architecture (PluralSight Course)"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 Extremely high level course on clean architecture, briefly covering Domain-Centric vs Database-Centric designs, Component Cohesions, Microservices, Testing, and extensibility of the architecture.

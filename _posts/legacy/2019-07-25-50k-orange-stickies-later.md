@@ -2,6 +2,7 @@
 title: "50,000 Orange Stickies Later"
 toc: true
 toc_label: Insights
+published: false
 ---
 
 This talk covers the essence of Event Storming: use of color-coded Post-it notes to model our domain, involving all stakeholders to craft our Ubiquitous Language, Process Model, and rapidly develop UI that are user-centric.

@@ -1,5 +1,6 @@
 ---
 title: "SQS Triggered Lambda Functions"
+published: false
 ---
 
 Important configuration and concepts to keep in mind when working with SQS and Lambda integration, which affects retries, processing time and message visibility, de-duplication, and idempotency design.

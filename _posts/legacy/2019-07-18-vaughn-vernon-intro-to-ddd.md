@@ -2,6 +2,7 @@
 title: "Introduction to Domain Driven Design"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 Domain Driven Design (DDD) is a software development approach to implement complex software by dividing the solution into domains that serves specific purposes, using tools such as Ubiquitous Language, Bounded Context, Domain Events and Aggregate Patterns.

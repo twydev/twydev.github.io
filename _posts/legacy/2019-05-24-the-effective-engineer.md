@@ -2,6 +2,7 @@
 title: "The Effective Engineer"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 Effective time management helps to deliver projects on time. The key to effectiveness is to focus on high impact activities, and some of the highest impact activities include building a strong foundation and culture for your engineering team, which surprisingly do not relate to the actual work of delivering the projects. 

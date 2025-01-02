@@ -2,6 +2,7 @@
 title: "My JavaScript Compendium"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 My notes are derived mostly from [YDKJS book series](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed).

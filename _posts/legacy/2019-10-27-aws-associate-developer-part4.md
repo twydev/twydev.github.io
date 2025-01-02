@@ -2,6 +2,7 @@
 title: "Ultimate AWS Certified Developer Associate 2019 - Part 4"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 Part 4 covers components offered by AWS that forms the technology stack for serverless applications (Lambda and Step Functions, DynamoDB, Cognito, API Gateway, S3, SNS, SQS, Kinesis, Aurora Serverless).

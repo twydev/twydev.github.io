@@ -2,6 +2,7 @@
 title: "Structure and Interpretation of Computer Program"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 **Structure and Interpretation of Computer Program** *The Big Ideas Behind Reliable, Scalable, and Maintainable Systems* - Gerald Jay Sussman, Hal Abelson, 2017

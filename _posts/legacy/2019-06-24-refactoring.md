@@ -2,6 +2,7 @@
 title: "Refactoring"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 A general approach to refactoring our code. It attempts to classify issues in our code into categories, and demonstrate the solutions to overcoming those issues. The list examples are not exhaustive, but it is sufficient for everyone to get started. 

@@ -2,6 +2,7 @@
 title: "Domain-Driven Design Fundamentals"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 Comprehensive course covering Domain Modelling, Entities and Value Objects, Aggregate Pattern, Domain Services, Bounded Context, Repository Pattern, and Domain Events.

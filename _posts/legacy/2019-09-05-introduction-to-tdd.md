@@ -1,5 +1,6 @@
 ---
 title: "Introduction to TDD - TDD and the Terminator"
+published: false
 ---
 
 Webinar hosted by JetBrains that provides an introduction to TDD, the key concepts to write a failing test first on established interfaces, write minimal code to pass the test, and to follow a Red-Green-Refactor flow to gradually implement the software.

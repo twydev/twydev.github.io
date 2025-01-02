@@ -1,5 +1,6 @@
 ---
 title: "A Brief History of JavaScript"
+published: false
 ---
 
 Understanding how JavaScript was invented helps us appreciate why the language behaves the way it does, how it evolved over the years and why certain features and limitations are still here today.

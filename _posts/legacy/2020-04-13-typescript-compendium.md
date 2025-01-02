@@ -2,6 +2,7 @@
 title: "My TypeScript Compendium"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 My notes are derived mostly from [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/) and [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/). But before diving into TypeScript, it is best to start from having a strong understanding in JavaScript as TypeScript is ultimately transpiled into JavaScript.

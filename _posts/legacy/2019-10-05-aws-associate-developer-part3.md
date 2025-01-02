@@ -2,6 +2,7 @@
 title: "Ultimate AWS Certified Developer Associate 2019 - Part 3"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 Part 3 covers infrastructure as code using AWS CloudFormation, monitoring using CloudWatch, X-Ray and CloudTrail, and integrating applications using SQS, SNS and Kinesis.

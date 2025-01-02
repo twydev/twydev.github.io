@@ -2,6 +2,7 @@
 title: "Setting up a Python project"
 toc: true
 toc_label: "Sections"
+published: false
 ---
 
 This guide is for Windows users, to help us set up Python projects systematically and consistently.

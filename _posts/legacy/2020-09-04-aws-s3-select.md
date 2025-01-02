@@ -2,6 +2,7 @@
 title: "AWS S3 Select - powerful, but tricky"
 classes: wide
 toc: true
+published: false
 ---
 
 S3 Select is a powerful feature that allows us to query a subset of data from within an S3 object using SQL expressions. However, I did not find this feature well documented. Here are my insights.

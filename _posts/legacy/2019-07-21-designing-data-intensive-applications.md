@@ -2,6 +2,7 @@
 title: "Designing Data-Intensive Applications"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 *Work in progress.*

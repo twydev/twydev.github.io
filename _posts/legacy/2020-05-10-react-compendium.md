@@ -2,6 +2,7 @@
 title: "My React & React Native Compendium"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 React is a frontend library that is performant and lightweight. In order to use React well, we need to understand the basics of lifecycle, states, and props, the difference between React and React Native, and some basic understanding of Redux and Testing in React.

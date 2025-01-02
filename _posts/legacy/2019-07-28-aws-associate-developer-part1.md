@@ -2,6 +2,7 @@
 title: "Ultimate AWS Certified Developer Associate 2019 - Part 1"
 toc: true
 toc_label: "Chapters"
+published: false
 ---
 
 Part 1 of this Udemy course by Stephane Maarek. Covers the fundamentals of AWS services, including IAM, EC2, ELB, ASG, EBS, Route 53, RDS, ElastiCache, VPC, and S3.
