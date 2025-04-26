@@ -10,6 +10,7 @@ tags:
   - golang
 toc: true
 toc_sticky: true
+classes: wide
 ---
 
 > title: {{ page.source_title }}
