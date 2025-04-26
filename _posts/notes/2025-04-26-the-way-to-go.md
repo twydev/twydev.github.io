@@ -8,7 +8,14 @@ categories:
   - notes
 tags:
   - golang
+toc: true
+toc_sticky: true
 ---
+
+{{ page.source_title }}
+
+> {{ page.source_author }}
+> {{ post.source_published }}
 
 I already have some experiences working on Golang codebase, so I will only highlight the important points from this book.
 
