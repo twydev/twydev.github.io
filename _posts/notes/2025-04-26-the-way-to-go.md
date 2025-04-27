@@ -9,14 +9,13 @@ categories:
 tags:
   - golang
 toc: true
-toc_sticky: true
 classes: wide
 ---
 
 > title: {{ page.source_title }}
 > author: {{ page.source_author }}
 > published: {{ page.source_published }}
-> edition: {{ page.source_published }}
+> edition: {{ page.source_edition }}
 > ISBN: {{ page.ISBN }}
 
 I already have some experiences working on Golang codebase, so I will only highlight the important points from this book.
