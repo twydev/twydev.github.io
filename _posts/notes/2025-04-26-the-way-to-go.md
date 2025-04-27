@@ -1,4 +1,5 @@
 ---
+title: "Notes for: The Way to Go"
 source_title: "The Way to Go: A Thorough Introduction to the Go Programming Language"
 source_author: "Ivo Balbaert"
 source_published: "2012"
@@ -10,6 +11,7 @@ tags:
   - golang
 toc: true
 classes: wide
+published: true
 ---
 
 > title: {{ page.source_title }}

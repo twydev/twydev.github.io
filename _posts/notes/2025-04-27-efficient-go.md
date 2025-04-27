@@ -1,4 +1,5 @@
 ---
+title: "Notes for: Efficient Go"
 source_title: "Efficient Go: Data-Driven Performance Optimization"
 source_author: "Bartlomiej Plotka"
 source_published: "2022"
@@ -10,6 +11,7 @@ tags:
   - golang
 toc: true
 classes: wide
+published: false
 ---
 
 > title: {{ page.source_title }}
