@@ -9,6 +9,10 @@ import (
 	"regexp"
 )
 
+const datePrefix = `^\d{4}-\d{2}-\d{2}`
+const datePrefixNoDelimiters = `^(\d{8})\d*-pub-(.+)$`
+const filePermission = 0644
+
 type CustomFileInfo struct {
 	FullPath             string
 	StandardizedFileName string
@@ -62,15 +66,12 @@ func GetCustomFileInfo(dir string, de os.DirEntry) *CustomFileInfo {
 	}
 }
 
-const DatePrefix = `^\d{4}-\d{2}-\d{2}`
-const DatePrefixNoDelimiters = `^(\d{8})\d*-pub-(.+)$`
-
 func Standard(fileName string) (string, error) {
-	if matched, _ := regexp.MatchString(DatePrefix, fileName); matched {
+	if matched, _ := regexp.MatchString(datePrefix, fileName); matched {
 		return fileName, nil
 	}
 
-	re := regexp.MustCompile(DatePrefixNoDelimiters)
+	re := regexp.MustCompile(datePrefixNoDelimiters)
 	matches := re.FindStringSubmatch(fileName)
 	if matches == nil {
 		return "", fmt.Errorf("filename does not match expected pattern")
@@ -113,7 +114,7 @@ func SyncFiles(srcfi *CustomFileInfo, dstfi *CustomFileInfo) error {
 
 	eq := bytes.Equal(srcb.Bytes(), dstb.Bytes())
 	if !eq {
-		dstfw, err := os.OpenFile(dstfi.FullPath, os.O_WRONLY|os.O_TRUNC, 0644)
+		dstfw, err := os.OpenFile(dstfi.FullPath, os.O_WRONLY|os.O_TRUNC, filePermission)
 		if err != nil {
 			return fmt.Errorf("failed to open dst file for writing: %v", err)
 		}
@@ -146,7 +147,7 @@ func CreatePost(srcfi *CustomFileInfo, dstDir string) error {
 	}
 
 	dstFileName := filepath.Join(dstDir, srcfi.StandardizedFileName)
-	dstfw, err := os.OpenFile(dstFileName, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
+	dstfw, err := os.OpenFile(dstFileName, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, filePermission)
 	if err != nil {
 		return fmt.Errorf("failed to open dst file for writing: %v", err)
 	}
