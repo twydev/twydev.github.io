@@ -46,11 +46,7 @@ func main() {
 			if err != nil {
 				log.Fatal(err)
 			}
-		}
-	}
-
-	for _, jfi := range journalMap {
-		if _, exists := postsMap[jfi.StandardizedFileName]; !exists {
+		} else {
 			err = CreatePost(jfi, postsDir)
 			if err != nil {
 				log.Fatal(err)
