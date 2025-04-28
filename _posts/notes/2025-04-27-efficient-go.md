@@ -450,7 +450,7 @@ Here is a recommended Test-Fix-Benchmark-Optimise workflow (TFBO):
 	- uses resources that are within the limits of development machine
 
 ```go
-// filename must ends with _test.go suffix
+// filename must end with _test.go suffix
 
 // test function must start with Benchmark prefix
 // test function must accept (b *testing.B) as the only parameter
