@@ -126,10 +126,10 @@ func SyncFiles(srcfi *CustomFileInfo, dstfi *CustomFileInfo) error {
 	}
 
 	if eq {
-		fmt.Println("Files are equal, no sync needed for", srcfi.OriginalFileName)
+		fmt.Println("No sync:", srcfi.OriginalFileName)
 		return nil
 	}
-	fmt.Println("Synced file", srcfi.OriginalFileName)
+	fmt.Println("Synced:", srcfi.OriginalFileName)
 	return nil
 }
 
@@ -158,6 +158,6 @@ func CreatePost(srcfi *CustomFileInfo, dstDir string) error {
 		return fmt.Errorf("failed to write file: %v", err)
 	}
 
-	fmt.Println("Created new post file", srcfi.StandardizedFileName)
+	fmt.Println("New post", srcfi.StandardizedFileName)
 	return nil
 }
