@@ -8,7 +8,8 @@ import (
 )
 
 const debug = true
-const journalEnv = "JOURNAL_DIR"
+const booksEnv = "BOOKS_DIR"
+const articlesEnv = "ARTICLES_DIR"
 const postsEnv = "POSTS_DIR"
 const estMapEntries = 100
 
@@ -17,7 +18,8 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	journalDir := os.Getenv(journalEnv)
+	booksDir := os.Getenv(booksEnv)
+	articlesDir := os.Getenv(articlesEnv)
 	postsDir := os.Getenv(postsEnv)
 
 	postsMap := make(map[string]*CustomFileInfo, estMapEntries)
@@ -31,10 +33,17 @@ func main() {
 	}
 
 	journalMap := make(map[string]*CustomFileInfo, estMapEntries)
-	err = RecursiveReadDir(journalDir, journalMap)
+
+	err = RecursiveReadDir(booksDir, journalMap)
 	if err != nil {
 		log.Fatalf("Failed to read journal directory: %v", err)
 	}
+
+	err = RecursiveReadDir(articlesDir, journalMap)
+	if err != nil {
+		log.Fatalf("Failed to read journal directory: %v", err)
+	}
+
 	if debug {
 		fmt.Println("journalMap:")
 		PrettyPrint(journalMap)
