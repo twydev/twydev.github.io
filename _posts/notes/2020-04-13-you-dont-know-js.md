@@ -14,6 +14,7 @@ classes: wide
 published: true
 ---
 
+> [!info]
 > title: {{ page.source_title }}
 > author: {{ page.source_author }}
 > published: {{ page.source_published }}
@@ -24,6 +25,7 @@ published: true
 
 My notes from You Don't Know JS (YDKJS) book series. Words from the author:
 
+> [!quote]
 > It is simultaneously a simple, easy-to-use language that has broad appeal, and a complex and nuanced collection of language mechanics which without careful study will elude true understanding even for the most seasoned of JavaScript developers ... Because JavaScript can be used without understanding, the understanding of the language is often never attained.
 
 I will only be highlighting key attributes of JS that tends to be forgotten in our day-to-day work as engineers.
@@ -64,6 +66,7 @@ In browsers, all variables declared in Global Scope are automatically properties
 
 _YDKJS, Scopes & Closures, Chapter 2_
 
+> [!tip]
 > No matter where a function is invoked from, or even how it is invoked, its lexical scope is **only** defined by **where** the function was declared.
 
 **Lexical Scopes** can be modified at runtime by `eval`, `with`, and some other built-in functions (strongly discouraged), which are restricted by strict-mode (Great!). Besides the danger of code injection through `eval`, performance of code will slow down. Scope will be dynamically generated when Engine executes the code, wasting all the optimization efforts of the Compiler from analyzing the static code before execution.
@@ -72,6 +75,7 @@ In short, we can assume JavaScript do not have Dynamic Scope (scope determined b
 
 Another important concept:
 
+> [!tip]
 > It is true that internally, scope is kind of like an object with properties for each of the available identifiers. But the scope "object" is not accessible to JavaScript code. It's an inner part of the Engine's implementation.
 
 ## Namespace
@@ -148,6 +152,7 @@ Parameters of a function are in their own parameter scope, with no access to fun
 
 _YDKJS, Scopes & Closures, Chapter 5_
 
+> [!tip]
 > Closure is when a function is able to remember and access its lexical scope even when that function is executing outside its lexical scope.
 
 We use "closure" as a verb, with meaning close to "reference".
@@ -259,7 +264,8 @@ var justAReference = obj.sayHello;
 justAReference(); // default binding!
 ```
 
-> BEWARE! - Event handlers in popular JavaScript libraries are quite fond of forcing your callback to have a `this` which points to, for instance, the DOM element that triggered the event
+> [!warning]
+> Event handlers in popular JavaScript libraries are quite fond of forcing your callback to have a `this` which points to, for instance, the DOM element that triggered the event
 
 ### Explicit Binding
 
@@ -443,6 +449,7 @@ Setting properties in object using assignment (`obj.property = value`), especial
 
 Prototypal delegation should be the defining mental model to understanding JavaScript objects.
 
+> [!tip]
 > Objects do not inherit behaviors. Objects delegate behaviors that are missing from their own properties to a prototype chain. The prototype chain is essentially layers of behavior, and you resolve what an object can perform by flattening the layers of behavior into a projection. In short, an object never truly "owns" a majority of behavior it can perform.
 
 ### Confusing Constructor
@@ -1025,6 +1032,7 @@ function* myGenerator(originalInput) {
 
 ### Generator-Promise Pattern (Async-Await)
 
+> [!tip]
 > The natural way to get the most out of Promises and Generators is to `yield` a Promise, and wire that Promise to control the generator's iterator.
 
 We can work with promises in a synchronous coding style by creating our workflow inside a generator.
@@ -1176,7 +1184,9 @@ _Image sourced from [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/
 - No need to be overly worried about micro-performance optimisation in our code, as the constant browser engine improvements will likely make a lot of these micro adjustments obsolete.
 - Focus manual effort on optimising the critical path.
 
-The Golang post about performance [benchmarking](https://twydev.github.io/notes/efficient-go/#benchmarking) is relevant for JS as well.
+The Golang post about performance is relevant for JS as well.
+- journal: [[202504272216-pub-efficient-go]]
+- web: [benchmarking](https://twydev.github.io/notes/efficient-go/#benchmarking) 
 
 ## Tail Call Optimisation
 
