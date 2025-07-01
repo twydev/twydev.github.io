@@ -15,6 +15,7 @@ classes: wide
 published: true
 ---
 
+> [!info]
 > title: {{ page.source_title }}
 > author: {{ page.source_author }}
 > published: {{ page.source_published }}
@@ -202,6 +203,7 @@ Instead of using structural properties, we will define an index based on its usa
 
 Index update when rows are updated introduces some overhead, but modern RDBMS has algorithm to optimise such updates.
 
+> [!tip]
 > Unlike other databases, PostgreSQL does not have clustered indexes. All tables are heap tables, all indexes are non-clustered. (Clustered index defines the order in which data is physically stored in a table)
 
 ### B-Tree Indexes
@@ -1007,6 +1009,7 @@ In theory PostgreSQL should be able solve the above by using a single query to r
 
 This is a golden quote from the book:
 
+> [!quote]
 > Often, new development methodologies require application developers to make significant changes to the development process, which inevitably leads to lower productivity. It is not unusual for potential performance gains to fail to justify the increase in development time. After all, developer time is the most expensive resource in any project.
 
 - This is applicable to the entire software engineering industry in general.

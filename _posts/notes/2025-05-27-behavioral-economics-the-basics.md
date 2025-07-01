@@ -14,6 +14,7 @@ classes: wide
 published: true
 ---
 
+> [!info]
 > title: {{ page.source_title }}
 > author: {{ page.source_author }}
 > published: {{ page.source_published }}
@@ -40,8 +41,9 @@ Behavioural economics uses insights from social sciences and psychology to infor
 
 # History of Economics
 
+> [!quote]
 > The famous Chicago economist George Stigler was fond of saying that there was nothing new in economics; Adam Smith had said it all.
-_Thaler, 2015_
+> _Thaler, 2015_
 
 ## Classical Economics
 
@@ -349,8 +351,9 @@ Other factors that affects human behaviours:
 	- The goldmine of behavioural data
 	- Also a good platform to nudge their behaviour
 
+> [!quote]
 > The first principle is that you must not fool yourself and you are the easiest person to fool.
-_Richard Feynman, 1985_
+> _Richard Feynman, 1985_
 
 # Other Books Mentioned
 

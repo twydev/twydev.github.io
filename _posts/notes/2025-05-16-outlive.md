@@ -14,6 +14,7 @@ classes: wide
 published: true
 ---
 
+> [!info]
 > title: {{ page.source_title }}
 > author: {{ page.source_author }}
 > published: {{ page.source_published }}

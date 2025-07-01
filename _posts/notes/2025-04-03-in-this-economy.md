@@ -14,6 +14,7 @@ classes: wide
 published: true
 ---
 
+> [!info]
 > title: {{ page.source_title }}
 > author: {{ page.source_author }}
 > published: {{ page.source_published }}
@@ -207,4 +208,5 @@ Martin Zweig Investing Rules:
 
 Alberto Brandolini:
 
+> [!quote]
 > The amount of energy needed to refute bullshit is an order of magnitude bigger than to produce it.
