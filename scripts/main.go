@@ -8,59 +8,70 @@ import (
 )
 
 const debug = false
-const booksEnv = "BOOKS_DIR"
-const articlesEnv = "ARTICLES_DIR"
-const researchEnv = "RESEARCH_DIR"
-const postsEnv = "POSTS_DIR"
 const estMapEntries = 100
 
-func main() {
-	err := LoadEnvFile(".env")
-	if err != nil {
-		log.Fatal(err)
-	}
-	// Journal Dir
-	booksDir := os.Getenv(booksEnv)
-	articlesDir := os.Getenv(articlesEnv)
-	researchDir := os.Getenv(researchEnv)
-	// Blog Dir
-	postsDir := os.Getenv(postsEnv)
+const envJournalBooks = "JOURNAL_DIR_BOOKS"
+const envJournalArticles = "JOURNAL_DIR_ARTICLES"
+const envJournalResearch = "JOURNAL_DIR_RESEARCH"
 
-	postsMap := make(map[string]*CustomFileInfo, estMapEntries)
-	err = RecursiveReadDir(postsDir, postsMap)
+const envBlogNotes = "DIR_NOTES"
+const envBlogResearch = "DIR_RESEARCH"
+
+func syncDir(journalDirs []string, blogDir string) {
+	fmt.Println("Syncing", journalDirs, "to", blogDir)
+
+	blogMap := make(map[string]*CustomFileInfo, estMapEntries)
+	err := RecursiveReadDir(blogDir, blogMap)
 	if err != nil {
-		log.Fatalf("Failed to read posts directory: %v", err)
+		log.Fatalf("Failed to read directory: %v", err)
 	}
 	if debug {
-		fmt.Println("postsMap:")
-		PrettyPrint(postsMap)
+		fmt.Println("blogMap:")
+		PrettyPrint(blogMap)
 	}
 
 	journalMap := make(map[string]*CustomFileInfo, estMapEntries)
-	journalDir := []string{booksDir, articlesDir, researchDir}
-	for _, dir := range journalDir {
+	for _, dir := range journalDirs {
 		err = RecursiveReadDir(dir, journalMap)
 		if err != nil {
-			log.Fatalf("Failed to read journal directory: %v", err)
+			log.Fatalf("Failed to read directory: %v", err)
 		}
 	}
-
 	if debug {
 		fmt.Println("journalMap:")
 		PrettyPrint(journalMap)
 	}
 
 	for _, jfi := range journalMap {
-		if pfi, exists := postsMap[jfi.StandardizedFileName]; exists {
-			err = SyncFiles(jfi, pfi)
+		if bfi, exists := blogMap[jfi.StandardizedFileName]; exists {
+			err = SyncFiles(jfi, bfi)
 			if err != nil {
 				log.Fatal(err)
 			}
 		} else {
-			err = CreatePost(jfi, postsDir)
+			err = CreatePost(jfi, blogDir)
 			if err != nil {
 				log.Fatal(err)
 			}
 		}
 	}
+}
+
+func main() {
+	err := LoadEnvFile(".env")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// Journal Dir
+	jdBooks := os.Getenv(envJournalBooks)
+	jdArticles := os.Getenv(envJournalArticles)
+	jdResearch := os.Getenv(envJournalResearch)
+
+	// Blog Dir
+	dNotes := os.Getenv(envBlogNotes)
+	dResearch := os.Getenv(envBlogResearch)
+
+	syncDir([]string{jdBooks, jdArticles}, dNotes)
+	syncDir([]string{jdResearch}, dResearch)
 }
